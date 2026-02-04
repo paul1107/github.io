@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Sparrow Self-Employed Carers - SEO Opportunity Audit | Black and White Boy</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Primary */
+            --color-black: #1A1A1A;
+            --color-white: #FFFFFF;
+            --color-gold: #FEC404;
+
+            /* Secondary */
+            --color-gray-dark: #32373C;
+            --color-gray-light: #F5F5F5;
+            --color-gray-medium: #6B7280;
+
+            /* Accent */
+            --color-success: #10B981;
+            --color-warning: #F59E0B;
+            --color-error: #EF4444;
+            --color-info: #3B82F6;
+
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+            /* Spacing */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+
+            /* Borders */
+            --radius-sm: 4px;
+            --radius-md: 6px;
+            --radius-lg: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color-black);
+            background: var(--color-white);
+        }
+
+        /* Header */
+        .header {
+            background: var(--color-black);
+            color: var(--color-white);
+            padding: var(--space-xl) var(--space-lg);
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .report-date {
+            color: var(--color-gray-medium);
+            font-size: 14px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-sm);
+        }
+
+        .header h1 span {
+            color: var(--color-gold);
+        }
+
+        .header-subtitle {
+            font-size: 20px;
+            color: var(--color-gray-medium);
+        }
+
+        .header-meta {
+            display: flex;
+            gap: var(--space-lg);
+            margin-top: var(--space-md);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-gray-dark);
+        }
+
+        .meta-item {
+            font-size: 14px;
+        }
+
+        .meta-label {
+            color: var(--color-gray-medium);
+        }
+
+        .meta-value {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-lg);
+        }
+
+        /* Executive Summary */
+        .summary-section {
+            background: var(--color-gray-light);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .summary-section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            color: var(--color-black);
+        }
+
+        .score-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .score-card {
+            background: var(--color-white);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .score-card-label {
+            font-size: 14px;
+            color: var(--color-gray-medium);
+            margin-bottom: var(--space-xs);
+        }
+
+        .score-card-value {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .score-card-value.good { color: var(--color-success); }
+        .score-card-value.warning { color: var(--color-warning); }
+        .score-card-value.poor { color: var(--color-error); }
+
+        .summary-text {
+            color: var(--color-gray-dark);
+            line-height: 1.7;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: var(--space-xl);
+            padding-bottom: var(--space-xl);
+            border-bottom: 1px solid var(--color-gray-light);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-gold);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--color-black);
+        }
+
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-black);
+            margin: var(--space-md) 0 var(--space-sm);
+        }
+
+        .section p {
+            color: var(--color-gray-dark);
+            margin-bottom: var(--space-sm);
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-md) 0;
+            font-size: 14px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: var(--space-sm);
+            text-align: left;
+            border-bottom: 1px solid var(--color-gray-light);
+        }
+
+        .data-table th {
+            background: var(--color-gray-light);
+            font-weight: 600;
+            color: var(--color-black);
+        }
+
+        .data-table tr:hover {
+            background: var(--color-gray-light);
+        }
+
+        /* Status badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .badge-success { background: #D1FAE5; color: #065F46; }
+        .badge-warning { background: #FEF3C7; color: #92400E; }
+        .badge-error { background: #FEE2E2; color: #991B1B; }
+        .badge-info { background: #DBEAFE; color: #1E40AF; }
+
+        /* Opportunity Cards */
+        .opportunity-list {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        .opportunity-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-light);
+            border-left: 4px solid var(--color-gold);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+        }
+
+        .opportunity-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+
+        .opportunity-card p {
+            font-size: 14px;
+            margin-bottom: var(--space-sm);
+        }
+
+        .opportunity-meta {
+            display: flex;
+            gap: var(--space-md);
+            font-size: 12px;
+            color: var(--color-gray-medium);
+        }
+
+        /* Issue Cards */
+        .issue-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-light);
+            border-left: 4px solid var(--color-error);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .issue-card.warning {
+            border-left-color: var(--color-warning);
+        }
+
+        .issue-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+
+        .issue-card p {
+            font-size: 14px;
+        }
+
+        /* Strategy Section */
+        .strategy-section {
+            background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-dark) 100%);
+            color: var(--color-white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+
+        .strategy-section h2 {
+            color: var(--color-gold);
+            font-size: 28px;
+            margin-bottom: var(--space-md);
+        }
+
+        .strategy-section p {
+            color: var(--color-gray-light);
+        }
+
+        .strategy-list {
+            list-style: none;
+            margin-top: var(--space-md);
+        }
+
+        .strategy-list li {
+            padding: var(--space-md);
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-sm);
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .strategy-number {
+            background: var(--color-gold);
+            color: var(--color-black);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .strategy-content h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .strategy-content p {
+            font-size: 14px;
+            color: var(--color-gray-medium);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: var(--space-xl);
+            background: var(--color-gray-light);
+            border-radius: var(--radius-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: var(--space-sm);
+        }
+
+        .cta-section p {
+            color: var(--color-gray-medium);
+            margin-bottom: var(--space-md);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--color-gold);
+            color: var(--color-black);
+        }
+
+        .btn-primary:hover {
+            background: #B8922D;
+        }
+
+        .btn-secondary {
+            background: var(--color-white);
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+            margin-left: var(--space-sm);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-black);
+            color: var(--color-gray-medium);
+            padding: var(--space-lg);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--color-gold);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-divider {
+            margin: 0 var(--space-sm);
+        }
+
+        /* Print Styles */
+        @media print {
+            .header {
+                background: var(--color-black) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .btn, .cta-section {
+                display: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .strategy-section {
+                background: var(--color-black) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--space-lg) var(--space-sm);
+            }
+
+            .header-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-sm);
+                margin-bottom: var(--space-lg);
+            }
+
+            .logo img {
+                height: 32px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header-subtitle {
+                font-size: 16px;
+                word-break: break-all;
+            }
+
+            .header-meta {
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+
+            .main {
+                padding: var(--space-lg) var(--space-sm);
+            }
+
+            .summary-section {
+                padding: var(--space-md);
+            }
+
+            .score-cards {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-sm);
+            }
+
+            .score-card {
+                padding: var(--space-sm);
+            }
+
+            .score-card-value {
+                font-size: 24px;
+            }
+
+            .score-card-label {
+                font-size: 12px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-xs);
+            }
+
+            .section-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 16px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section h3 {
+                font-size: 16px;
+            }
+
+            .data-table {
+                font-size: 12px;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: var(--space-xs);
+            }
+
+            .opportunity-card,
+            .issue-card {
+                padding: var(--space-sm);
+            }
+
+            .opportunity-card h4,
+            .issue-card h4 {
+                font-size: 14px;
+            }
+
+            .opportunity-card p,
+            .issue-card p {
+                font-size: 13px;
+            }
+
+            .opportunity-meta {
+                flex-direction: column;
+                gap: var(--space-xs);
+            }
+
+            .strategy-section {
+                padding: var(--space-lg);
+            }
+
+            .strategy-section h2 {
+                font-size: 22px;
+            }
+
+            .strategy-list li {
+                padding: var(--space-sm);
+                flex-direction: column;
+                gap: var(--space-sm);
+            }
+
+            .strategy-number {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
+            }
+
+            .strategy-content h4 {
+                font-size: 14px;
+            }
+
+            .strategy-content p {
+                font-size: 13px;
+            }
+
+            .cta-section {
+                padding: var(--space-lg) var(--space-md);
+            }
+
+            .cta-section h2 {
+                font-size: 20px;
+            }
+
+            .btn {
+                display: block;
+                width: 100%;
+                margin: var(--space-sm) 0;
+                padding: 12px 20px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+                width: 100%;
+            }
+
+            .footer {
+                padding: var(--space-md);
+                font-size: 12px;
+            }
+
+            ul {
+                padding-left: 16px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .score-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .badge {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-top">
+                <a href="https://blackandwhiteboy.com" class="logo"><img src="https://blackandwhiteboy.com/wp-content/uploads/2025/03/Asset-1BWB-Logo2025v2White-Gold.svg" alt="Black and White Boy"></a>
+                <span class="report-date">Report generated: 4 February 2026</span>
+            </div>
+            <h1>SEO Opportunity Audit<br><span>Sparrow Self-Employed Carers</span></h1>
+            <p class="header-subtitle">https://sparrowcarers.co.uk</p>
+            <div class="header-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Industry:</span>
+                    <span class="meta-value">Home Care / Introductory Services</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Location:</span>
+                    <span class="meta-value">Hexham, Northumberland</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Business Type:</span>
+                    <span class="meta-value">Local</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Executive Summary -->
+        <section class="summary-section">
+            <h2>Executive Summary</h2>
+            <div class="score-cards">
+                <div class="score-card">
+                    <div class="score-card-label">Overall Opportunity Score</div>
+                    <div class="score-card-value warning">58/100</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-card-label">Keyword Opportunities</div>
+                    <div class="score-card-value good">28</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-card-label">Quick Wins Identified</div>
+                    <div class="score-card-value good">8</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-card-label">LLM Visibility</div>
+                    <div class="score-card-value good">High</div>
+                </div>
+            </div>
+            <p class="summary-text">Sparrow Self-Employed Carers has a solid foundation with excellent LLM/AI visibility - you're already being prominently cited in AI search results for your core market. However, traditional SEO performance shows significant room for growth. You're currently ranking for 28 keywords with an estimated traffic value of just £17/month. The biggest opportunity lies in your 8 "quick win" keywords where you rank on page 2 (positions 11-20) - with targeted optimisation, these could move to page 1 and significantly increase your organic visibility. Your main competitors (The Good Care Group, Elder, PrimeCarers) have stronger domain authority, but your local focus and unique positioning as a Hexham-based introductory agency gives you a competitive edge for regional searches.</p>
+        </section>
+
+        <!-- Section 1: Keyword Opportunities -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🎯</div>
+                <h2>Keyword Opportunities</h2>
+            </div>
+            <p>Keywords your competitors rank for that represent growth opportunities for your business.</p>
+
+            <h3>High-Value Keyword Gaps</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Keyword</th>
+                        <th>Monthly Searches</th>
+                        <th>Your Position</th>
+                        <th>Top Competitor</th>
+                        <th>Opportunity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>self employed carers</td>
+                        <td>480</td>
+                        <td>11</td>
+                        <td>thegoodcaregroup.com</td>
+                        <td><span class="badge badge-warning">Quick Win</span></td>
+                    </tr>
+                    <tr>
+                        <td>self-employed carer</td>
+                        <td>480</td>
+                        <td>12</td>
+                        <td>thegoodcaregroup.com</td>
+                        <td><span class="badge badge-warning">Quick Win</span></td>
+                    </tr>
+                    <tr>
+                        <td>independent carer</td>
+                        <td>320</td>
+                        <td>9</td>
+                        <td>elder.org</td>
+                        <td><span class="badge badge-success">Top 10</span></td>
+                    </tr>
+                    <tr>
+                        <td>independent carers</td>
+                        <td>320</td>
+                        <td>14</td>
+                        <td>elder.org</td>
+                        <td><span class="badge badge-warning">Quick Win</span></td>
+                    </tr>
+                    <tr>
+                        <td>self employed carers near me</td>
+                        <td>140</td>
+                        <td>6</td>
+                        <td>athomecaregroup.co.uk</td>
+                        <td><span class="badge badge-success">Top 10</span></td>
+                    </tr>
+                    <tr>
+                        <td>how to become a self-employed carer</td>
+                        <td>140</td>
+                        <td>21</td>
+                        <td>surewise.com</td>
+                        <td><span class="badge badge-info">Content Gap</span></td>
+                    </tr>
+                    <tr>
+                        <td>self-employed carers jobs</td>
+                        <td>110</td>
+                        <td>15</td>
+                        <td>indeed.com</td>
+                        <td><span class="badge badge-warning">Quick Win</span></td>
+                    </tr>
+                    <tr>
+                        <td>freelance carer</td>
+                        <td>90</td>
+                        <td>10</td>
+                        <td>elder.org</td>
+                        <td><span class="badge badge-success">Top 10</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Push Page 2 Rankings to Page 1</h4>
+                    <p>You have 8 keywords ranking in positions 11-20 with a combined monthly search volume of 2,400+. Moving these to page 1 could increase organic traffic by 300-500%. Focus on "self employed carers" (480 vol), "self-employed carer" (480 vol), and "independent carers" (320 vol).</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Create "How to Become" Content Hub</h4>
+                    <p>Keywords like "how to become a self-employed carer" (140/mo) show strong search intent for your carer recruitment. Your blog has good foundations but lacks comprehensive guides that could capture this traffic and recruit new carers.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Target "Near Me" Keywords</h4>
+                    <p>You're already ranking #6 for "self employed carers near me" (140/mo). Strengthening local signals and creating location-specific pages for Newcastle, Tynedale, and Cumbria could capture more of this high-intent local traffic.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Competitive Landscape -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>Competitive Landscape</h2>
+            </div>
+            <p>How you compare to competitors in your market and where you can differentiate.</p>
+
+            <h3>Your Top Competitors</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Competitor</th>
+                        <th>Avg Position</th>
+                        <th>Keyword Overlap</th>
+                        <th>Strength</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>thegoodcaregroup.com</td>
+                        <td>7.6</td>
+                        <td>13 keywords</td>
+                        <td><span class="badge badge-error">Very Strong</span></td>
+                    </tr>
+                    <tr>
+                        <td>primecarers.co.uk</td>
+                        <td>9.6</td>
+                        <td>13 keywords</td>
+                        <td><span class="badge badge-error">Strong</span></td>
+                    </tr>
+                    <tr>
+                        <td>curamcare.com</td>
+                        <td>11.6</td>
+                        <td>13 keywords</td>
+                        <td><span class="badge badge-warning">Moderate</span></td>
+                    </tr>
+                    <tr>
+                        <td>elder.org</td>
+                        <td>13.3</td>
+                        <td>14 keywords</td>
+                        <td><span class="badge badge-warning">Moderate</span></td>
+                    </tr>
+                    <tr>
+                        <td>athomecaregroup.co.uk</td>
+                        <td>18.9</td>
+                        <td>15 keywords</td>
+                        <td><span class="badge badge-success">Similar to You</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Competitive Insights</h3>
+            <p><strong>The Good Care Group</strong> dominates with an average position of 7.6 across overlapping keywords. They have extensive content covering all aspects of self-employed care, strong domain authority, and excellent backlink profile.</p>
+            <p><strong>PrimeCarers</strong> is your closest direct competitor model-wise - they also match carers with clients. They outrank you on most terms due to stronger domain authority and more comprehensive location pages.</p>
+            <p><strong>Your Competitive Advantage:</strong> None of your major competitors have a strong local presence in Northumberland/Hexham. Your family-run, local positioning is unique and should be leveraged more in your content and SEO strategy.</p>
+        </section>
+
+        <!-- Section 3: LLM Visibility -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🤖</div>
+                <h2>AI & LLM Visibility</h2>
+            </div>
+            <p>How visible your brand is in AI assistants like ChatGPT and Perplexity - the new search frontier.</p>
+
+            <h3>Current LLM Presence</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Query</th>
+                        <th>Perplexity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"self employed carers North East England"</td>
+                        <td>Prominently cited</td>
+                        <td><span class="badge badge-success">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>"self employed carers Hexham Northumberland"</td>
+                        <td>First result, detailed mention</td>
+                        <td><span class="badge badge-success">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>"introductory agency carers UK"</td>
+                        <td>Named as "prominent example"</td>
+                        <td><span class="badge badge-success">Excellent</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>LLM Optimisation Opportunities</h3>
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Maintain Your LLM Advantage</h4>
+                    <p>You're currently being prominently cited in AI search results - a significant competitive advantage. Your clear positioning, FAQ content, and third-party mentions (Bark, Community Catalysts) are contributing to this visibility. Continue publishing authoritative content about self-employed care.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Add FAQ Schema Markup</h4>
+                    <p>Your FAQ content is being cited by LLMs. Adding structured FAQ schema to your pages will make this content more accessible to AI systems and could improve your visibility further.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Create Comparison Content</h4>
+                    <p>LLMs frequently reference your content when explaining the difference between care agencies and introductory services. Create a dedicated "Self-employed carers vs Care Agencies" comparison page to cement this positioning.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Site Structure & Coverage -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🏗️</div>
+                <h2>Site Structure & Service Coverage</h2>
+            </div>
+            <p>Analysis of your website structure and whether all your services are properly represented.</p>
+
+            <h3>Service Page Coverage</h3>
+            <p>Your current site structure is clean and focused:</p>
+            <ul style="margin-left: 20px; margin-bottom: 16px;">
+                <li><strong>Home</strong> - Good overview, clear value proposition</li>
+                <li><strong>Become a Sparrow carer</strong> - Targets carer recruitment</li>
+                <li><strong>Find a Sparrow carer</strong> - Targets care seekers</li>
+                <li><strong>About us</strong> - Strong story content</li>
+                <li><strong>Blog</strong> - Good foundation, needs expansion</li>
+            </ul>
+
+            <h3>Structural Improvements</h3>
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Add Location-Specific Service Pages</h4>
+                    <p>Create dedicated pages for your key service areas: "Self-employed carers in Newcastle", "Home carers Hexham", "Carers in Tynedale", "Care services Northumberland". These will capture local search intent and strengthen your regional authority.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Create Service-Type Pages</h4>
+                    <p>Add pages for specific care types: "Live-in care", "Companionship care", "Personal care", "Home help services". Competitors rank well for these terms and you're missing this traffic entirely.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Add Testimonials/Case Studies Page</h4>
+                    <p>Your testimonials from Freddy and Samantha are strong. Create a dedicated testimonials page with more carer and client stories - this builds trust and provides content that LLMs can cite.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: On-Page Fundamentals -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📝</div>
+                <h2>On-Page Fundamentals</h2>
+            </div>
+            <p>Key on-page elements that impact your search visibility.</p>
+
+            <h3>Page-Level Analysis</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Page</th>
+                        <th>Title</th>
+                        <th>Primary Keyword</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home</td>
+                        <td>Sparrow Self-Employed Carers: exceptional independent carers</td>
+                        <td>self-employed carers</td>
+                        <td><span class="badge badge-success">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>Become a carer</td>
+                        <td>Become a Sparrow carer</td>
+                        <td>become self-employed carer</td>
+                        <td><span class="badge badge-warning">Needs work</span></td>
+                    </tr>
+                    <tr>
+                        <td>Find a carer</td>
+                        <td>Find a Sparrow carer</td>
+                        <td>find self-employed carer</td>
+                        <td><span class="badge badge-warning">Needs work</span></td>
+                    </tr>
+                    <tr>
+                        <td>About us</td>
+                        <td>About us</td>
+                        <td>-</td>
+                        <td><span class="badge badge-success">Fine</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Issues to Address</h3>
+            <div class="issue-card warning">
+                <h4>Page Titles Could Be More Descriptive</h4>
+                <p>"Become a Sparrow carer" and "Find a Sparrow carer" are brand-focused but miss keyword opportunities. Consider: "Become a Self-Employed Carer in Northumberland | Sparrow Carers" and "Find Independent Carers Near You | Sparrow Self-Employed Carers".</p>
+            </div>
+            <div class="issue-card warning">
+                <h4>Missing Meta Descriptions</h4>
+                <p>Ensure all pages have unique, compelling meta descriptions that include your target keywords and location (Hexham, Northumberland, North East).</p>
+            </div>
+
+            <h3>Quick Wins</h3>
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Optimise Title Tags</h4>
+                    <p>Update your page titles to include primary keywords and location. Example: "Self-Employed Carers Hexham & North East | Sparrow Carers" for the homepage.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Add Internal Links Between Pages</h4>
+                    <p>Link your blog posts to your main service pages and vice versa. This helps search engines understand your site structure and passes authority between pages.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Topical Authority -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📚</div>
+                <h2>Topical Authority</h2>
+            </div>
+            <p>How comprehensively you cover your core topics and where to expand.</p>
+
+            <p>Your blog has good foundational content including "Why we started Sparrow" and comparisons between care agencies and self-employed carers. However, you need more comprehensive coverage to build topical authority.</p>
+
+            <h3>Content Opportunities</h3>
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Create a "Complete Guide to Self-Employed Care"</h4>
+                    <p>A pillar page covering everything about self-employed care: what it is, how it works, costs, benefits, regulations, how to find carers. This type of comprehensive content ranks well and gets cited by LLMs.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: High</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>"Becoming a Self-Employed Carer" Series</h4>
+                    <p>Target the 140+ monthly searches for "how to become a self-employed carer" with a content series: setting up, DBS checks, insurance, finding clients, tax requirements, etc. This also feeds your carer recruitment.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Cost Comparison Content</h4>
+                    <p>Create content comparing self-employed carer costs vs agency costs in different scenarios. Include your "starting from £22/hour" pricing and show the maths. This is exactly what care seekers search for.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Local Care Guides</h4>
+                    <p>Create guides for each area you serve: "Home Care Options in Hexham", "Finding Care in Newcastle", "Care Services in Northumberland". These build local authority and capture location-based searches.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Local Presence -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">📍</div>
+                <h2>Local Presence</h2>
+            </div>
+            <p>Your visibility in local search results and map listings.</p>
+
+            <h3>Local SEO Health</h3>
+            <p>Your business is based in Hexham (3 Shaftoe Leazes, NE46 3DF) and serves Northumberland, Tyneside, and Cumbria. Your local presence has good foundations:</p>
+            <ul style="margin-left: 20px; margin-bottom: 16px;">
+                <li>Listed on Community Catalysts Small Good Stuff directory</li>
+                <li>Listed on Bark.com with positive reviews</li>
+                <li>Clear address and phone number on website</li>
+            </ul>
+
+            <h3>Citation Opportunities</h3>
+            <div class="opportunity-list">
+                <div class="opportunity-card">
+                    <h4>Claim/Optimise Google Business Profile</h4>
+                    <p>Ensure your Google Business Profile is claimed, verified, and fully optimised with services, photos, posts, and Q&A. This is essential for local search visibility.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Get Listed on Homecare.co.uk</h4>
+                    <p>Most of your competitors are listed on homecare.co.uk, a major UK care directory. Getting listed here would increase visibility and provide a quality backlink.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: High</span>
+                        <span>Effort: Low</span>
+                    </div>
+                </div>
+                <div class="opportunity-card">
+                    <h4>Build Local Citations</h4>
+                    <p>Get listed in local directories: Hexham Courant, Newcastle business directories, Northumberland business listings. Consistent NAP (Name, Address, Phone) across all listings is crucial.</p>
+                    <div class="opportunity-meta">
+                        <span>Impact: Medium</span>
+                        <span>Effort: Medium</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Section -->
+        <section class="strategy-section">
+            <h2>Recommended Strategy</h2>
+            <p>Based on this audit, here are the prioritised actions to maximise your visibility and growth:</p>
+
+            <ol class="strategy-list">
+                <li>
+                    <div class="strategy-number">1</div>
+                    <div class="strategy-content">
+                        <h4>Quick Win: Optimise Page Titles & Meta Descriptions</h4>
+                        <p>Update titles to include target keywords and location. Low effort, immediate impact on click-through rates and rankings.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="strategy-number">2</div>
+                    <div class="strategy-content">
+                        <h4>Push Page 2 Keywords to Page 1</h4>
+                        <p>Focus content optimisation on your 8 quick-win keywords (positions 11-20). Strengthen internal linking, add more content depth, and build a few quality backlinks.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="strategy-number">3</div>
+                    <div class="strategy-content">
+                        <h4>Create Location Service Pages</h4>
+                        <p>Build out pages for Newcastle, Hexham, Tynedale, and Northumberland to capture local search traffic your competitors are currently winning.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="strategy-number">4</div>
+                    <div class="strategy-content">
+                        <h4>Develop "How to Become" Content Series</h4>
+                        <p>Target carer recruitment keywords with comprehensive guides. This serves both SEO and business goals by attracting potential carers.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="strategy-number">5</div>
+                    <div class="strategy-content">
+                        <h4>Build Local Citations & Directory Listings</h4>
+                        <p>Get listed on homecare.co.uk, optimise Google Business Profile, and build consistent local citations to strengthen local search presence.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="strategy-number">6</div>
+                    <div class="strategy-content">
+                        <h4>Maintain LLM Visibility Advantage</h4>
+                        <p>Continue publishing authoritative content, add FAQ schema, and create comparison content that AI systems will cite.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Act on These Opportunities?</h2>
+            <p>This audit identified significant growth potential. Let's discuss how to capture it.</p>
+            <a href="https://blackandwhiteboy.com/30-mins-meeting/" class="btn btn-primary">Book a Strategy Call</a>
+            <button onclick="window.print()" class="btn btn-secondary">Download PDF</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            Powered by <a href="https://blackandwhiteboy.com">Black and White Boy AI and SEO</a>
+            <span class="footer-divider">|</span>
+            Report ID: sparrow-carers-20260204-t3k9
+        </p>
+    </footer>
+</body>
+</html>
